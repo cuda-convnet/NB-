@@ -163,8 +163,8 @@ Public Class MainFrom
                            End If
 
                        Case "写表号"
-                           If builder.ToString().Replace(" ", "").Length >= 40 Then
-                               MessageBox.Show("表号设置成功，当前表号为: " + Me.TxtMeterNumNew.Text)
+                           If RecDate.Length >= 30 Then
+                               MessageBox.Show("表号设置成功，当前表号为: " + meternum)
                                If CheckBox1.Checked = True Then
                                    TxtMeterNumNew.Text = Convert.ToString(IntMeterNum + 1).PadLeft(14, "0")
                                End If
