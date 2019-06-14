@@ -109,7 +109,6 @@ Public Class MainFrom
         End If
         '添加事件注册
         AddHandler comm.DataReceived, AddressOf comm_DataReceived
-
         '获取数据库表号
         Dim adapter As New OkMeterTableAdapter
         Dim MaxMeterNum As String
